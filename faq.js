@@ -4,6 +4,7 @@ function toggleQuestions(){
   const caretArrows = document.querySelectorAll('.fa-caret-down');
   const qAnswer = document.querySelectorAll('.faq-answer');
 
+  let openQuestion = -1;
 
   caretArrows.forEach((arrow, index) => {
 
@@ -19,6 +20,13 @@ function toggleQuestions(){
             arrow.classList.add('fa-caret-down');
           }
 
+          if(openQuestion !== -1 && openQuestion !== index){
+            qAnswer[openQuestion].classList.add('d-none');
+            caretArrows[openQuestion].classList.remove('fa-caret-up');
+            caretArrows[openQuestion].classList.add('fa-caret-down');
+          }
+
+          openQuestion = index ;
         } else {
           answer.classList.add('d-none');
         }
