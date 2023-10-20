@@ -1,0 +1,55 @@
+/* DEFINE */
+/* IMPORT */
+body {
+  background-image: url(../images/faq-project.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 2em auto;
+}
+
+.faq-header {
+  color: rgb(39, 36, 36);
+}
+
+.faq-p {
+  font-size: smaller;
+  color: rgb(39, 36, 36);
+}
+
+.category-list li {
+  background-color: #AEC3AE;
+  border: 1px solid #AEC3AE;
+  color: rgb(39, 36, 36);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.category-list li:hover {
+  background-color: white;
+  border: 1px solid #94A684;
+  color: #94A684;
+}
+
+.question-card {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-bottom: 1px solid #a4a3a3;
+}
+
+.fa-circle-question {
+  font-size: 2.5rem;
+  color: #94A684;
+}
+
+.fa-caret-down {
+  cursor: pointer;
+  color: rgb(39, 36, 36);
+}/*# sourceMappingURL=style.css.map */
