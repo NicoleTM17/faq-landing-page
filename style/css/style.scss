@@ -54,11 +54,28 @@ body{
   color: $darker-green;
 }
 
+.active-cat{
+  background-color: $darker-green !important;
+}
+
+.active-cat:hover{
+  background-color: white !important;
+  border: 1px solid $darker-green !important;
+  color: $darker-green !important;
+}
+
 .question-card{
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  border-bottom: 1px solid #a4a3a3;
   font-family: $nunito;
+}
+
+.question-card:not(.bottom){
+  border-bottom: 1px solid #a4a3a3;
+}
+
+.faq-question{
+  font-size: 1.3rem;
 }
 
 .fa-circle-question{

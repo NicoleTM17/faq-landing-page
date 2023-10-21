@@ -46,25 +46,39 @@ function toggleCategories(){
   const categories = document.querySelectorAll('.faq-category');
   // console.log(categories);
 
-  const questions = document.querySelectorAll('.faq-question');
-  // console.log(questions);
+  const questionCards = document.querySelectorAll('.question-card');
 
-  const answers = document.querySelectorAll('.faq-answer');
-  // console.log(answers);
-
-  categories.forEach((category, index) => {
+  categories.forEach((category) => {
     // console.log(category);
     category.addEventListener('click', event => {
-      console.log(event);
+      const categoryName = category.getAttribute('data-category');
+      // console.log(categoryName);
+
+
+      questionCards.forEach((card) => {
+
+        const categoryCards = card.getAttribute('data-category');
+        // console.log(categoryCards);
+
+        if(categoryName === categoryCards){
+          card.classList.remove('d-none');
+
+        } else {
+          card.classList.add('d-none');
+        };
+
+      });
+
+      // Remove 'active-cat' class from all categories
+      categories.forEach((cat) => {
+        cat.classList.remove('active-cat');
+      });
+
+      // Add 'active-cat' class to the clicked category
+      category.classList.add('active-cat');
     })
   })
-
-
 }
-
-
-
-
 
 toggleQuestions();
 toggleCategories();

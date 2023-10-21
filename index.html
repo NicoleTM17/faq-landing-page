@@ -22,32 +22,99 @@
 
       <div class="col-md-4 categories">
         <ul class="category-list list-unstyled">
-          <li class="faq-category w-100">General</li>
-          <li class="faq-category w-100">My Account</li>
-          <li class="faq-category w-100">Membership & Subscription</li>
-          <li class="faq-category w-100">Ordering</li>
-          <li class="faq-category w-100">Product</li>
-          <li class="faq-category w-100">Delivery & Shipping</li>
-          <li class="faq-category w-100">Returns & Exchange</li>
+          <li class="faq-category w-100 active-cat" data-category="general">General</li>
+          <li class="faq-category w-100" data-category="my-account">My Account</li>
+          <li class="faq-category w-100" data-category="member-sub">Membership & Subscription</li>
+          <li class="faq-category w-100" data-category="orders">Ordering</li>
+          <!-- <li class="faq-category w-100">Product</li> -->
+          <li class="faq-category w-100" data-category="delivery">Delivery & Shipping</li>
+          <li class="faq-category w-100" data-category="returns">Returns & Exchange</li>
         </ul>
       </div>
 
       <div class="col-md-8 questions mt-2">
-        <div class="question-card rounded-top p-3">
+        <!--GENERAL-->
+        <div class="question-card rounded-top p-3" data-category="general">
           <span class="position-relative"><h4 class="faq-question">Do you have a physical store I can visit, or is it online-only?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
-          <p class="faq-answer d-none">Currently, our products are only sold online. We do hope to make our products available in stores in the future!</p>
+          <p class="faq-answer mt-3 d-none">Currently, our products are only sold online. We do hope to make our products available in stores in the future!</p>
         </div>
-        <div class="question-card p-3">
+        <div class="question-card p-3" data-category="general">
           <span class="position-relative"><h4 class="faq-question">Are your products vegan and cruelty-free?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
-          <p class="faq-answer d-none">All of our products are vegan and cruelty free. </p>
+          <p class="faq-answer mt-3 d-none">All of our products are vegan and cruelty free. </p>
         </div>
-        <div class="question-card p-3">
+        <div class="question-card p-3" data-category="general">
           <span class="position-relative"><h4 class="faq-question">Are your fragrances made with natural or synthetic ingredients?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
-          <p class="faq-answer d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis hendrerit dolor magna eget est. </p>
+          <p class="faq-answer mt-3 d-none">All of our fragrances are made using natural ingredients.</p>
         </div>
-        <div class="question-card p-3">
+        <div class="question-card bottom p-3" data-category="general">
           <span class="position-relative"><h4 class="faq-question">Are your products tested on animals?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
-          <p class="faq-answer d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis hendrerit dolor magna eget est. </p>
+          <p class="faq-answer mt-3 d-none">We are proud to state that our products are not tested on animals. We are dedicated to cruelty-free practices and do not conduct any animal testing at any stage of our product development. We believe in the importance of ethical and humane treatment of animals, and our commitment to this principle extends to our entire range of products. Rest assured that you can enjoy our fragrances with the peace of mind that no animals were harmed in their creation.</p>
+        </div>
+
+        <!--MY ACCOUNT-->
+        <div class="question-card rounded-top p-3 d-none" data-category="my-account">
+          <span class="position-relative"><h4 class="faq-question">How can I updated my email address?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">To edit or change the email address associated with your account, navigate to your profile, select “Personal info,” then select Save after making the appropriate changes. <br/> Having trouble updating your email address? Please contact our Customer Experience team for assistance. </p>
+        </div>
+        <div class="question-card p-3 d-none" data-category="my-account">
+          <span class="position-relative"><h4 class="faq-question">I need to update my profile information, how do I do that?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">To make changes to your account information on our website, simply log into your account, then click your initials in the upper-right hand corner (or if you’re using our mobile app, click the Account icon in the lower right-hand corner), and a menu will appear. From there, you can select any of the links to manage your subscription, update your billing details, change your shipping information, or change your name or preferred gender by clicking the corresponding links. </p>
+        </div>
+        <div class="question-card bottom p-3 d-none" data-category="my-account">
+          <span class="position-relative"><h4 class="faq-question">How do I delete my account?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">To delete your account, simply log into your account then go to settings. At the bottom of the page there will be an option to delete your account.</p>
+        </div>
+
+        <!--MEMBERSHIP & SUBSCRIPTION-->
+        <div class="question-card rounded-top p-3 d-none" data-category="member-sub">
+          <span class="position-relative"><h4 class="faq-question">Where can I check my subscription details?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">To check out your subscription information, simply log into your account and navigate to the settings menu where there will be an option titled 'Your Subscription plan'. There you will find all the information you need. <br/> If you need more help, Please contact our Customer Experience team for assistance. </p>
+        </div>
+        <div class="question-card bottom p-3 d-none" data-category="member-sub">
+          <span class="position-relative"><h4 class="faq-question">How do I cancel my subscription?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">To cancel your membership, please contact our Customer Experience team <u><b>here</u></b>. Once your subscription has been canceled, you will receive an email confirming your subscription's cancellation.</p>
+        </div>
+
+        <!--ORDER-->
+        <div class="question-card rounded-top p-3 d-none" data-category="orders">
+          <span class="position-relative"><h4 class="faq-question">Where can I check my order history?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">You can check details of your past orders in your account settings, under the <b><u>your orders</u></b> menu.</p>
+        </div>
+        <div class="question-card p-3  d-none" data-category="orders">
+          <span class="position-relative"><h4 class="faq-question">Where can I find my billing information?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">You can find your billing information in your account settings, under the <b><u>your personal details</u></b> option.</p>
+        </div>
+        <div class="question-card bottom p-3  d-none" data-category="orders">
+          <span class="position-relative"><h4 class="faq-question">I think I have been charged incorrectly. How can I contact you?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">If you believe there has been an error with your billing, please contact our Customer Experiemce team <b><u>here.</u></b></p>
+        </div>
+
+        <!--DELIVERY & SHIPPING-->
+        <div class="question-card rounded-top p-3 d-none" data-category="delivery">
+          <span class="position-relative"><h4 class="faq-question">Where do you ship?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">We ship worldwide!</p>
+        </div>
+        <div class="question-card p-3 d-none" data-category="delivery">
+          <span class="position-relative"><h4 class="faq-question">Help, I never received my order!</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">If you have been waiting a long time for your order with no updates, please contact our customer Experience team <b><u>here.</u></b> </p>
+        </div>
+        <div class="question-card bottom p-3 d-none" data-category="delivery">
+          <span class="position-relative"><h4 class="faq-question">My order is faulty, what do I do?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">If you have received a faulty item, please contact our customer experience team <b><u>here.</u></b></p>
+        </div>
+
+        <!--RETURNS & EXCHANGE-->
+        <div class="question-card rounded-top p-3 d-none" data-category="returns">
+          <span class="position-relative"><h4 class="faq-question">I want to return my order. Can I get a full refund?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">Sure! We're 100% committed to making you happy. If you wish to return your item(s), please contact us with the reason of return, within 10 days from receiving your order (according to the delivery date on the tracking record, if applicable), and we will provide the return instructions in details! Returns without prior communication with us will not be accepted. Returns made will be refunded in your original form of payment. </p>
+        </div>
+        <div class="question-card p-3 d-none" data-category="returns">
+          <span class="position-relative"><h4 class="faq-question">I want to exchange my order.</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">Sure! Please contact us with the reason of return, within 10 days from receiving your order (according to the delivery date on the tracking record, if applicable), and we will provide the return instructions in details! Please note that we only accept one-time exchange.</p>
+        </div>
+        <div class="question-card bottom p-3 d-none" data-category="returns">
+          <span class="position-relative"><h4 class="faq-question">Do you provide a return label?</h4><i class="fa-solid fa-caret-down position-absolute top-0 end-0 fs-3"></i></span>
+          <p class="faq-answer mt-3 d-none">We do provide return labels if you contact us within 10 days from receiving your order.</p>
         </div>
 
       </div>
