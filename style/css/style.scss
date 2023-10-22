@@ -84,9 +84,21 @@ body{
 }
 
 .fa-caret-down{
+  position: absolute;
+  top: 0;
+  right: 0;
   cursor: pointer;
   color: $black-color;
 }
+
+.fa-caret-up{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: $black-color;
+}
+
 
 .copyright{
   opacity: .7;
