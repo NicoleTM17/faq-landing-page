@@ -16,9 +16,17 @@
   }
 
   .fa-caret-down {
-    position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
+    position: relative !important;
+    top: -4rem !important;
+    left: 14rem !important;
+    cursor: pointer;
+    color: $black-color;
+  }
+
+  .fa-caret-up {
+    position: relative !important;
+    top: -4rem !important;
+    left: 14rem !important;
     cursor: pointer;
     color: $black-color;
   }

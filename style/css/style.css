@@ -11,6 +11,20 @@
   .copyright {
     margin-top: 2rem !important;
   }
+  .fa-caret-down {
+    position: relative !important;
+    top: -4rem !important;
+    left: 14rem !important;
+    cursor: pointer;
+    color: rgb(39, 36, 36);
+  }
+  .fa-caret-up {
+    position: relative !important;
+    top: -4rem !important;
+    left: 14rem !important;
+    cursor: pointer;
+    color: rgb(39, 36, 36);
+  }
 }
 body {
   background-image: url(../images/faq-project.png);
